@@ -34,6 +34,8 @@ for row in range(sheet_1.nrows):
         # 今回抽出するのは名詞だけ
         if partOfSpeech ==u'名詞':
             each_data.append(token.surface)
+        if partOfSpeech ==u'動詞':
+            each_data.append(token.surface)
     data.append(each_data)
     each_data=[]
 
